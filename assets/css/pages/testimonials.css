@@ -1,0 +1,118 @@
+/* ============================================
+   ABYNSS STUDIO — Testimonials Page Styles
+   ============================================ */
+
+.testimonials-page-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-md);
+}
+
+.testimonial-page-card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  transition: all var(--duration-normal) var(--ease-out);
+}
+
+.testimonial-page-card:hover {
+  border-color: var(--border-hover);
+  box-shadow: var(--shadow-glow);
+}
+
+.testimonial-page-card .rating {
+  margin-bottom: var(--space-md);
+}
+
+.testimonial-page-card blockquote {
+  font-size: var(--fs-body-lg);
+  border-left: none;
+  padding: 0;
+  margin: 0 0 var(--space-lg) 0;
+  color: var(--text-secondary);
+  font-style: italic;
+  line-height: var(--lh-relaxed);
+}
+
+.testimonial-page-author {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.testimonial-page-author img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--border-color);
+}
+
+.testimonial-page-author-info h4 {
+  font-family: var(--font-sans);
+  font-size: var(--fs-body);
+  font-weight: var(--fw-semibold);
+}
+
+.testimonial-page-author-info p {
+  font-size: var(--fs-caption);
+  color: var(--text-muted);
+}
+
+/* Video Testimonial */
+.video-testimonial {
+  position: relative;
+  aspect-ratio: 16/9;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  cursor: pointer;
+  grid-column: span 2;
+}
+
+.video-testimonial img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-testimonial-play {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.4);
+  transition: background var(--duration-fast);
+}
+
+.video-testimonial:hover .video-testimonial-play {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.video-testimonial-play-btn {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--bg-primary);
+  transition: transform var(--duration-normal) var(--ease-out);
+}
+
+.video-testimonial:hover .video-testimonial-play-btn {
+  transform: scale(1.1);
+}
+
+.video-testimonial-play-btn svg {
+  width: 32px;
+  height: 32px;
+  margin-left: 4px;
+}
+
+@media (max-width: 767px) {
+  .testimonials-page-grid { grid-template-columns: 1fr; }
+  .video-testimonial { grid-column: span 1; }
+}

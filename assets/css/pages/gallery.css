@@ -1,0 +1,126 @@
+/* ============================================
+   ABYNSS STUDIO — Gallery Page Styles
+   ============================================ */
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-sm);
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  aspect-ratio: 1;
+}
+
+.gallery-item.wide {
+  grid-column: span 2;
+  aspect-ratio: 2/1;
+}
+
+.gallery-item.tall {
+  grid-row: span 2;
+  aspect-ratio: auto;
+}
+
+.gallery-item img,
+.gallery-item video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--duration-slower) var(--ease-out);
+}
+
+.gallery-item:hover img,
+.gallery-item:hover video {
+  transform: scale(1.08);
+}
+
+.gallery-item-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.2) 40%, transparent 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: var(--space-md);
+  transition: background var(--duration-normal) var(--ease-out);
+}
+
+.gallery-item:hover .gallery-item-overlay {
+  background: linear-gradient(to top, rgba(0,0,0,0.96) 0%, rgba(0,0,0,0.45) 50%, transparent 100%);
+}
+
+.gallery-item-overlay h4 {
+  font-family: var(--font-serif);
+  font-size: var(--fs-body);
+  color: var(--text-primary);
+  margin-bottom: var(--space-3xs);
+  transform: translateY(8px);
+  transition: transform var(--duration-normal) var(--ease-out), color var(--duration-normal);
+}
+
+.gallery-item-overlay .caption {
+  font-size: var(--fs-label);
+  font-weight: var(--fw-semibold);
+  letter-spacing: var(--ls-widest);
+  text-transform: uppercase;
+  color: var(--accent);
+  transform: translateY(8px);
+  opacity: 0.8;
+  transition: transform var(--duration-normal) var(--ease-out), opacity var(--duration-normal);
+}
+
+.gallery-item:hover .gallery-item-overlay h4 {
+  transform: translateY(0);
+  color: var(--accent-light);
+}
+
+.gallery-item:hover .gallery-item-overlay .caption {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.gallery-item-overlay svg {
+  width: 32px;
+  height: 32px;
+  color: var(--text-primary);
+}
+
+.gallery-item-type {
+  position: absolute;
+  top: var(--space-xs);
+  right: var(--space-xs);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-primary);
+}
+
+.gallery-item-type svg {
+  width: 14px;
+  height: 14px;
+}
+
+@media (max-width: 1024px) {
+  .gallery-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 767px) {
+  .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+  .gallery-item.wide {
+    grid-column: span 2;
+  }
+}
+
+.gallery-section {
+  padding-top: 50px !important;
+}

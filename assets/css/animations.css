@@ -1,0 +1,255 @@
+/* ============================================
+   ABYNSS STUDIO — Animation Keyframes & Utilities
+   ============================================ */
+
+/* ---- Fade Animations ---- */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-40px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInLeft {
+  from { opacity: 0; transform: translateX(-40px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeInRight {
+  from { opacity: 0; transform: translateX(40px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to   { opacity: 0; }
+}
+
+/* ---- Scale Animations ---- */
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+@keyframes scaleUp {
+  from { transform: scale(1); }
+  to   { transform: scale(1.05); }
+}
+
+/* ---- Reveal Animations ---- */
+@keyframes revealFromLeft {
+  from { clip-path: inset(0 100% 0 0); }
+  to   { clip-path: inset(0 0 0 0); }
+}
+
+@keyframes revealFromRight {
+  from { clip-path: inset(0 0 0 100%); }
+  to   { clip-path: inset(0 0 0 0); }
+}
+
+@keyframes revealFromTop {
+  from { clip-path: inset(0 0 100% 0); }
+  to   { clip-path: inset(0 0 0 0); }
+}
+
+@keyframes revealFromBottom {
+  from { clip-path: inset(100% 0 0 0); }
+  to   { clip-path: inset(0 0 0 0); }
+}
+
+@keyframes curtainReveal {
+  from { clip-path: inset(50% 0); }
+  to   { clip-path: inset(0 0); }
+}
+
+/* ---- Slide Animations ---- */
+@keyframes slideUp {
+  from { transform: translateY(100%); }
+  to   { transform: translateY(0); }
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-100%); }
+  to   { transform: translateY(0); }
+}
+
+/* ---- Rotate ---- */
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+@keyframes rotateReverse {
+  from { transform: rotate(360deg); }
+  to   { transform: rotate(0deg); }
+}
+
+/* ---- Pulse ---- */
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50%      { opacity: 0.5; }
+}
+
+@keyframes pulseScale {
+  0%, 100% { transform: scale(1); }
+  50%      { transform: scale(1.05); }
+}
+
+/* ---- Shimmer (loading) ---- */
+@keyframes shimmer {
+  0%   { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+/* ---- Marquee ---- */
+@keyframes marqueeLeft {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes marqueeRight {
+  0%   { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+/* ---- Float ---- */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-20px); }
+}
+
+@keyframes floatSlow {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  25%      { transform: translateY(-10px) rotate(1deg); }
+  75%      { transform: translateY(10px) rotate(-1deg); }
+}
+
+/* ---- Glow ---- */
+@keyframes glowPulse {
+  0%, 100% { box-shadow: 0 0 20px rgba(199, 166, 106, 0.1); }
+  50%      { box-shadow: 0 0 40px rgba(199, 166, 106, 0.25); }
+}
+
+/* ---- Mouse indicator ---- */
+@keyframes scrollIndicator {
+  0%   { transform: translateY(0); opacity: 1; }
+  50%  { transform: translateY(10px); opacity: 0.3; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+/* ---- Noise / Film Grain overlay ---- */
+@keyframes grain {
+  0%, 100% { transform: translate(0, 0); }
+  10%      { transform: translate(-5%, -10%); }
+  20%      { transform: translate(-15%, 5%); }
+  30%      { transform: translate(7%, -25%); }
+  40%      { transform: translate(-5%, 25%); }
+  50%      { transform: translate(-15%, 10%); }
+  60%      { transform: translate(15%, 0%); }
+  70%      { transform: translate(0%, 15%); }
+  80%      { transform: translate(3%, 35%); }
+  90%      { transform: translate(-10%, 10%); }
+}
+
+/* ---- Line Draw ---- */
+@keyframes drawLine {
+  from { width: 0; }
+  to   { width: 100%; }
+}
+
+@keyframes drawLineV {
+  from { height: 0; }
+  to   { height: 100%; }
+}
+
+/* ---- Progress bar ---- */
+@keyframes progressFill {
+  from { transform: scaleX(0); }
+  to   { transform: scaleX(1); }
+}
+
+/* ============================================
+   Animation Utility Classes
+   Applied by JS or CSS on scroll/hover
+   ============================================ */
+
+/* Base state for scroll-triggered elements */
+[data-animate] {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity var(--duration-slow) var(--ease-out),
+              transform var(--duration-slow) var(--ease-out);
+}
+
+[data-animate].is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+[data-animate="fade"] {
+  transform: none;
+}
+
+[data-animate="fade-up"] {
+  transform: translateY(40px);
+}
+
+[data-animate="fade-down"] {
+  transform: translateY(-40px);
+}
+
+[data-animate="fade-left"] {
+  transform: translateX(-40px);
+}
+
+[data-animate="fade-right"] {
+  transform: translateX(40px);
+}
+
+[data-animate="scale"] {
+  transform: scale(0.9);
+}
+
+[data-animate="reveal"] {
+  opacity: 1;
+  transform: none;
+  clip-path: inset(0 100% 0 0);
+  transition: clip-path var(--duration-slower) var(--ease-out);
+}
+
+[data-animate="reveal"].is-visible {
+  clip-path: inset(0 0 0 0);
+}
+
+/* Stagger delays */
+[data-delay="1"] { transition-delay: 0.1s; }
+[data-delay="2"] { transition-delay: 0.2s; }
+[data-delay="3"] { transition-delay: 0.3s; }
+[data-delay="4"] { transition-delay: 0.4s; }
+[data-delay="5"] { transition-delay: 0.5s; }
+[data-delay="6"] { transition-delay: 0.6s; }
+
+/* ---- Noise Overlay ---- */
+.noise-overlay::after {
+  content: '';
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  right: -50%;
+  bottom: -50%;
+  width: 200%;
+  height: 200%;
+  background: transparent url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E") repeat;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: var(--noise-opacity);
+  animation: grain 8s steps(10) infinite;
+}

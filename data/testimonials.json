@@ -1,0 +1,70 @@
+{
+  "testimonials": [
+    {
+      "id": 1,
+      "name": "Aditya Pratama",
+      "role": "Pengantin Pria",
+      "company": "Wedding Client",
+      "avatar": "/assets/images/testimonials/avatar-01.jpg",
+      "quote": "ABYNSS STUDIO benar-benar luar biasa! Foto dan video pernikahan kami terasa seperti film Hollywood. Setiap detail tertangkap dengan sempurna. Kami tidak bisa lebih bahagia dengan hasilnya.",
+      "rating": 5,
+      "type": "text",
+      "date": "2024-11-20"
+    },
+    {
+      "id": 2,
+      "name": "Dina Kusuma",
+      "role": "Marketing Director",
+      "company": "Tokopedia",
+      "avatar": "/assets/images/testimonials/avatar-02.jpg",
+      "quote": "Profesionalisme dan kualitas visual ABYNSS Studio membuat kami kembali lagi untuk setiap campaign besar. Mereka mengerti kebutuhan brand dengan sangat baik dan selalu deliver beyond expectations.",
+      "rating": 5,
+      "type": "text",
+      "date": "2024-09-15"
+    },
+    {
+      "id": 3,
+      "name": "Rizky Ramadhan",
+      "role": "CEO",
+      "company": "StartupXYZ",
+      "avatar": "/assets/images/testimonials/avatar-03.jpg",
+      "quote": "Video profil perusahaan yang dibuat ABYNSS Studio membuat investor kami terkesan. Kualitas sinematiknya setara dengan production house besar, tapi dengan sentuhan personal yang membuat cerita kami benar-benar hidup.",
+      "rating": 5,
+      "type": "text",
+      "date": "2024-08-10"
+    },
+    {
+      "id": 4,
+      "name": "Maya Anggraeni",
+      "role": "Pengantin Wanita",
+      "company": "Wedding Client",
+      "avatar": "/assets/images/testimonials/avatar-04.jpg",
+      "quote": "Dari awal konsultasi sampai penyerahan album, pengalaman bersama ABYNSS Studio sangat menyenangkan. Tim mereka ramah, profesional, dan hasil foto prewedding kami di Bali benar-benar breathtaking!",
+      "rating": 5,
+      "type": "text",
+      "date": "2024-07-22"
+    },
+    {
+      "id": 5,
+      "name": "Bambang Suryanto",
+      "role": "Owner",
+      "company": "Restoran Nusantara Premium",
+      "avatar": "/assets/images/testimonials/avatar-05.jpg",
+      "quote": "Foto makanan dari ABYNSS Studio membuat menu kami terlihat 10x lebih menggugah selera. Setelah update foto di semua platform, penjualan kami meningkat 35%. Investasi terbaik untuk bisnis kuliner!",
+      "rating": 5,
+      "type": "text",
+      "date": "2024-06-18"
+    },
+    {
+      "id": 6,
+      "name": "Sarah Wijaya",
+      "role": "Fashion Designer",
+      "company": "SW Fashion House",
+      "avatar": "/assets/images/testimonials/avatar-06.jpg",
+      "quote": "ABYNSS Studio menangkap esensi koleksi fashion saya dengan sempurna. Editorial photo mereka punya feel majalah internasional. Sangat recommended untuk brand fashion!",
+      "rating": 5,
+      "type": "text",
+      "date": "2024-05-30"
+    }
+  ]
+}

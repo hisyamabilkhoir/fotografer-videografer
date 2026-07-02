@@ -1,0 +1,50 @@
+{
+  "activities": [
+    {
+      "id": 1,
+      "slug": "workshop-fotografi-landscape-bandung",
+      "title": "Workshop Fotografi Landscape Bandung",
+      "excerpt": "Workshop 2 hari tentang teknik fotografi landscape di area Bandung Utara bersama 30 peserta enthusiast.",
+      "content": "Workshop intensif fotografi landscape yang diselenggarakan di kawasan Bandung Utara. Peserta belajar teknik long exposure, composition rules, dan post-processing landscape photography. Acara berlangsung selama 2 hari dengan praktik langsung di Tebing Keraton dan Kawah Putih.",
+      "cover": "/assets/images/activities/activity-01.jpg",
+      "images": [
+        "/assets/images/activities/activity-01.jpg",
+        "/assets/images/activities/activity-01-2.jpg"
+      ],
+      "category": "Workshop",
+      "date": "2024-10-15",
+      "location": "Bandung Utara",
+      "participants": 30
+    },
+    {
+      "id": 2,
+      "slug": "wedding-expo-2024",
+      "title": "Bandung Wedding Expo 2024",
+      "excerpt": "Berpartisipasi sebagai exhibitor di Bandung Wedding Expo 2024 dan bertemu ratusan calon pengantin.",
+      "content": "ABYNSS Studio menjadi salah satu exhibitor utama di Bandung Wedding Expo 2024 yang diselenggarakan di Trans Convention Center. Selama 3 hari, kami memamerkan portfolio wedding terbaik dan memberikan konsultasi gratis kepada ratusan calon pengantin.",
+      "cover": "/assets/images/activities/activity-02.jpg",
+      "images": [
+        "/assets/images/activities/activity-02.jpg"
+      ],
+      "category": "Expo",
+      "date": "2024-09-05",
+      "location": "Trans Convention Center, Bandung",
+      "participants": null
+    },
+    {
+      "id": 3,
+      "slug": "behind-the-scene-commercial-shoot",
+      "title": "BTS: Commercial Shoot untuk Brand Nasional",
+      "excerpt": "Intip behind the scene dari sesi pemotretan commercial untuk salah satu brand terbesar di Indonesia.",
+      "content": "Behind the scene dari proses pemotretan campaign untuk brand nasional. Dari pre-production meeting, setup lighting yang kompleks, hingga momen-momen tak terduga selama produksi berlangsung.",
+      "cover": "/assets/images/activities/activity-03.jpg",
+      "images": [
+        "/assets/images/activities/activity-03.jpg"
+      ],
+      "category": "Behind The Scene",
+      "date": "2024-08-20",
+      "location": "Jakarta",
+      "participants": null
+    }
+  ]
+}

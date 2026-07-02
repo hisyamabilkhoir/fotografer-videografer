@@ -1,0 +1,81 @@
+{
+  "name": "ABYNSS STUDIO",
+  "tagline": "Cinematic Visual Storytelling",
+  "description": "Studio fotografi & videografi profesional yang menghadirkan pengalaman visual sinematik kelas dunia. Kami menangkap momen terbaik Anda dengan sentuhan seni dan teknologi terkini.",
+  "email": "hello@abynsstudio.com",
+  "phone": "+62 859-7372-9267",
+  "whatsapp": "6285973729267",
+  "address": "Jl. Braga No. 45, Bandung, Jawa Barat, Indonesia 40111",
+  "maps_embed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.798467117539!2d107.6093!3d-6.9175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sBraga+Street+Bandung!5e0!3m2!1sen!2sid!4v1",
+  "social": {
+    "instagram": "https://instagram.com/abynsstudio",
+    "tiktok": "https://tiktok.com/@abynsstudio",
+    "youtube": "https://youtube.com/@abynsstudio",
+    "facebook": "https://facebook.com/abynsstudio",
+    "twitter": "https://twitter.com/abynsstudio"
+  },
+  "business_hours": [
+    { "day": "Senin", "time": "09:00 - 18:00" },
+    { "day": "Selasa", "time": "09:00 - 18:00" },
+    { "day": "Rabu", "time": "09:00 - 18:00" },
+    { "day": "Kamis", "time": "09:00 - 18:00" },
+    { "day": "Jumat", "time": "09:00 - 17:00" },
+    { "day": "Sabtu", "time": "10:00 - 16:00" },
+    { "day": "Minggu", "time": "Tutup", "closed": true }
+  ],
+  "stats": [
+    { "number": 500, "suffix": "+", "label": "Proyek Selesai" },
+    { "number": 12, "suffix": "+", "label": "Tahun Pengalaman" },
+    { "number": 350, "suffix": "+", "label": "Klien Puas" },
+    { "number": 25, "suffix": "+", "label": "Penghargaan" }
+  ],
+  "about": {
+    "studio_story": "ABYNSS STUDIO berdiri sejak 2013 dengan visi menghadirkan visual storytelling yang melampaui batas konvensional. Berawal dari seorang fotografer independen dengan kamera dan mimpi besar, kini kami telah berkembang menjadi studio kreatif yang dipercaya oleh ratusan klien dari berbagai industri.",
+    "photographer_story": "Dengan lebih dari 12 tahun pengalaman di dunia fotografi dan videografi, kami telah mengabadikan ribuan momen berharga — dari pernikahan intim hingga kampanye brand multinasional. Setiap frame yang kami ambil bukan sekadar gambar, melainkan cerita yang hidup.",
+    "mission": "Menghadirkan visual storytelling kelas dunia yang menginspirasi, menggerakkan emosi, dan meninggalkan kesan mendalam melalui setiap karya.",
+    "vision": "Menjadi studio kreatif terdepan di Indonesia yang dikenal secara global atas kualitas sinematik dan inovasi visual.",
+    "workflow": [
+      {
+        "title": "Konsultasi",
+        "description": "Diskusi mendalam untuk memahami visi dan kebutuhan Anda"
+      },
+      {
+        "title": "Perencanaan",
+        "description": "Merancang konsep kreatif, mood board, dan timeline produksi"
+      },
+      {
+        "title": "Produksi",
+        "description": "Eksekusi pemotretan atau syuting dengan peralatan profesional"
+      },
+      {
+        "title": "Penyajian",
+        "description": "Editing, color grading, dan penyerahan hasil final berkualitas tinggi"
+      }
+    ],
+    "equipment": [
+      { "category": "Kamera", "items": ["Sony A7 IV", "Sony FX6", "Canon R5", "Fujifilm X-T5"] },
+      { "category": "Lensa", "items": ["Sony GM 24-70mm f/2.8", "Sony GM 85mm f/1.4", "Canon RF 50mm f/1.2", "Sigma Art 35mm f/1.4"] },
+      { "category": "Drone", "items": ["DJI Mavic 3 Pro", "DJI Mini 4 Pro"] },
+      { "category": "Software", "items": ["Adobe Lightroom Classic", "Adobe Premiere Pro", "DaVinci Resolve", "Capture One"] }
+    ],
+    "timeline": [
+      { "year": "2013", "title": "Awal Perjalanan", "description": "Memulai sebagai fotografer freelance dengan passion yang membara" },
+      { "year": "2015", "title": "Studio Pertama", "description": "Membuka studio kecil pertama dan mulai menerima klien korporat" },
+      { "year": "2017", "title": "Ekspansi Videografi", "description": "Menambah layanan videografi sinematik dan drone" },
+      { "year": "2019", "title": "Award Winner", "description": "Meraih penghargaan Best Wedding Photography Asia Pacific" },
+      { "year": "2021", "title": "Brand Besar", "description": "Dipercaya oleh brand multinasional untuk kampanye nasional" },
+      { "year": "2024", "title": "Studio Baru", "description": "Pindah ke studio yang lebih besar dengan fasilitas lengkap" }
+    ],
+    "clients": [
+      "Tokopedia", "Gojek", "BCA", "Telkomsel", "Samsung", "Honda",
+      "Mandiri", "Unilever", "Pertamina", "Garuda Indonesia", "BNI", "XL Axiata"
+    ]
+  },
+  "seo": {
+    "title": "ABYNSS STUDIO — Fotografer & Videografer Profesional",
+    "description": "Studio fotografi & videografi profesional di Bandung. Spesialis wedding, corporate, commercial, dan editorial. Kualitas sinematik, pengalaman 12+ tahun.",
+    "keywords": "fotografer bandung, videografer bandung, wedding photography, corporate photography, studio foto bandung, prewedding bandung",
+    "og_image": "/assets/images/og/og-home.jpg",
+    "url": "https://abynsstudio.com"
+  }
+}

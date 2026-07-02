@@ -1,0 +1,228 @@
+{
+  "categories": [
+    {
+      "id": "photography",
+      "name": "Paket Fotografi",
+      "packages": [
+        {
+          "name": "Basic",
+          "price": 2500000,
+          "currency": "Rp",
+          "period": "per sesi",
+          "description": "Cocok untuk kebutuhan foto personal dan portrait sederhana",
+          "featured": false,
+          "features": [
+            { "text": "Durasi 2 jam", "included": true },
+            { "text": "1 fotografer", "included": true },
+            { "text": "50 foto terseleksi", "included": true },
+            { "text": "Basic editing & retouching", "included": true },
+            { "text": "Online gallery", "included": true },
+            { "text": "1 lokasi", "included": true },
+            { "text": "Wardrobe consultation", "included": false },
+            { "text": "Printed album", "included": false },
+            { "text": "Drone shot", "included": false }
+          ],
+          "addons": [
+            "Extra jam: Rp 500.000/jam",
+            "Cetak foto 10R: Rp 25.000/lembar"
+          ]
+        },
+        {
+          "name": "Premium",
+          "price": 5500000,
+          "currency": "Rp",
+          "period": "per sesi",
+          "description": "Paket terpopuler untuk hasil yang lebih profesional",
+          "featured": true,
+          "features": [
+            { "text": "Durasi 4 jam", "included": true },
+            { "text": "2 fotografer", "included": true },
+            { "text": "150 foto terseleksi", "included": true },
+            { "text": "Advanced editing & retouching", "included": true },
+            { "text": "Online gallery", "included": true },
+            { "text": "2 lokasi", "included": true },
+            { "text": "Wardrobe consultation", "included": true },
+            { "text": "Softcover album 20 halaman", "included": true },
+            { "text": "Drone shot", "included": false }
+          ],
+          "addons": [
+            "Extra jam: Rp 400.000/jam",
+            "Upgrade hardcover album: Rp 500.000",
+            "Drone shot: Rp 1.000.000"
+          ]
+        },
+        {
+          "name": "Ultimate",
+          "price": 12000000,
+          "currency": "Rp",
+          "period": "per sesi",
+          "description": "Paket eksklusif dengan semua yang Anda butuhkan",
+          "featured": false,
+          "features": [
+            { "text": "Durasi full day (8 jam)", "included": true },
+            { "text": "3 fotografer", "included": true },
+            { "text": "Unlimited foto terseleksi", "included": true },
+            { "text": "Premium editing & retouching", "included": true },
+            { "text": "Online gallery", "included": true },
+            { "text": "Unlimited lokasi", "included": true },
+            { "text": "Wardrobe & styling consultation", "included": true },
+            { "text": "Hardcover album premium 40 halaman", "included": true },
+            { "text": "Drone shot included", "included": true }
+          ],
+          "addons": [
+            "Extra hari: Rp 8.000.000/hari",
+            "Video highlight: Rp 5.000.000",
+            "Canvas print: Rp 350.000/pcs"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "videography",
+      "name": "Paket Videografi",
+      "packages": [
+        {
+          "name": "Basic",
+          "price": 5000000,
+          "currency": "Rp",
+          "period": "per project",
+          "description": "Video singkat untuk social media dan personal",
+          "featured": false,
+          "features": [
+            { "text": "Durasi syuting 3 jam", "included": true },
+            { "text": "1 videografer", "included": true },
+            { "text": "Video output 2-3 menit", "included": true },
+            { "text": "Basic color grading", "included": true },
+            { "text": "Background music licensed", "included": true },
+            { "text": "Full HD output", "included": true },
+            { "text": "Drone footage", "included": false },
+            { "text": "Same-day edit", "included": false }
+          ],
+          "addons": [
+            "Drone footage: Rp 1.500.000",
+            "Extra menit video: Rp 500.000/menit"
+          ]
+        },
+        {
+          "name": "Premium",
+          "price": 12000000,
+          "currency": "Rp",
+          "period": "per project",
+          "description": "Video sinematik berkualitas tinggi",
+          "featured": true,
+          "features": [
+            { "text": "Durasi syuting full day", "included": true },
+            { "text": "2 videografer + 1 asisten", "included": true },
+            { "text": "Video output 5-8 menit", "included": true },
+            { "text": "Cinematic color grading", "included": true },
+            { "text": "Original music scoring", "included": true },
+            { "text": "4K output", "included": true },
+            { "text": "Drone footage included", "included": true },
+            { "text": "Same-day edit 1 menit", "included": true }
+          ],
+          "addons": [
+            "Extra hari syuting: Rp 8.000.000",
+            "Behind the scene video: Rp 3.000.000"
+          ]
+        },
+        {
+          "name": "Ultimate",
+          "price": 25000000,
+          "currency": "Rp",
+          "period": "per project",
+          "description": "Produksi video level commercial / TVC",
+          "featured": false,
+          "features": [
+            { "text": "Durasi syuting 2-3 hari", "included": true },
+            { "text": "Full crew (5-7 orang)", "included": true },
+            { "text": "Video output 10-15 menit", "included": true },
+            { "text": "Hollywood-grade color grading", "included": true },
+            { "text": "Custom music composition", "included": true },
+            { "text": "4K HDR output", "included": true },
+            { "text": "Drone & cinematic gimbal", "included": true },
+            { "text": "Motion graphics & VFX", "included": true }
+          ],
+          "addons": [
+            "Additional version (15/30/60s): Rp 2.000.000/versi",
+            "Talent / model: By quotation"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wedding",
+      "name": "Paket Pernikahan",
+      "packages": [
+        {
+          "name": "Silver",
+          "price": 8000000,
+          "currency": "Rp",
+          "period": "per event",
+          "description": "Dokumentasi esensial untuk hari istimewa",
+          "featured": false,
+          "features": [
+            { "text": "Coverage 8 jam", "included": true },
+            { "text": "2 fotografer", "included": true },
+            { "text": "300+ foto terseleksi", "included": true },
+            { "text": "Professional editing", "included": true },
+            { "text": "Online gallery", "included": true },
+            { "text": "USB flash drive", "included": true },
+            { "text": "Prewedding session", "included": false },
+            { "text": "Cinematic highlight video", "included": false },
+            { "text": "Premium album", "included": false }
+          ],
+          "addons": [
+            "Prewedding: Rp 3.000.000",
+            "Cinematic video: Rp 7.000.000"
+          ]
+        },
+        {
+          "name": "Gold",
+          "price": 18000000,
+          "currency": "Rp",
+          "period": "per event",
+          "description": "Paket lengkap foto + video terlaris",
+          "featured": true,
+          "features": [
+            { "text": "Coverage 12 jam", "included": true },
+            { "text": "3 fotografer + 2 videografer", "included": true },
+            { "text": "Unlimited foto terseleksi", "included": true },
+            { "text": "Premium editing & retouching", "included": true },
+            { "text": "Online gallery + USB drive", "included": true },
+            { "text": "Prewedding photo session", "included": true },
+            { "text": "Cinematic highlight video 5 menit", "included": true },
+            { "text": "Hardcover album 30 halaman", "included": true },
+            { "text": "Drone coverage", "included": true }
+          ],
+          "addons": [
+            "Same-day edit video: Rp 3.000.000",
+            "Engagement session: Rp 2.500.000"
+          ]
+        },
+        {
+          "name": "Platinum",
+          "price": 35000000,
+          "currency": "Rp",
+          "period": "per event",
+          "description": "Pengalaman premium tanpa kompromi",
+          "featured": false,
+          "features": [
+            { "text": "Coverage 2 hari penuh", "included": true },
+            { "text": "4 fotografer + 3 videografer", "included": true },
+            { "text": "Unlimited foto + full editing", "included": true },
+            { "text": "Magazine-quality retouching", "included": true },
+            { "text": "Online gallery + USB + cloud", "included": true },
+            { "text": "Prewedding + engagement session", "included": true },
+            { "text": "Full wedding film 15 menit", "included": true },
+            { "text": "Luxury album 50 halaman + parents album", "included": true },
+            { "text": "Drone + crane + gimbal coverage", "included": true }
+          ],
+          "addons": [
+            "Destination prewedding: By quotation",
+            "Live streaming: Rp 5.000.000"
+          ]
+        }
+      ]
+    }
+  ]
+}

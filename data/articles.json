@@ -1,0 +1,52 @@
+{
+  "articles": [
+    {
+      "id": 1,
+      "slug": "tips-foto-prewedding-outdoor",
+      "title": "10 Tips Foto Prewedding Outdoor yang Memukau",
+      "excerpt": "Panduan lengkap untuk mendapatkan hasil foto prewedding outdoor yang sinematik dan berkesan. Mulai dari pemilihan lokasi hingga teknik pose terbaik.",
+      "content": "Foto prewedding outdoor memiliki pesona tersendiri. Keindahan alam menjadi latar yang sempurna untuk mengabadikan momen romantis pasangan. Namun, ada beberapa hal penting yang perlu diperhatikan agar hasilnya maksimal.\n\n## 1. Pilih Waktu Golden Hour\nWaktu terbaik untuk pemotretan outdoor adalah saat golden hour — 1 jam setelah matahari terbit atau 1 jam sebelum matahari terbenam. Cahaya pada waktu ini memberikan nuansa hangat dan romantis yang sempurna.\n\n## 2. Kenali Lokasi Terlebih Dahulu\nLakukan survey lokasi beberapa hari sebelum pemotretan. Perhatikan arah cahaya, spot-spot menarik, dan potensi gangguan.\n\n## 3. Koordinasi Wardrobe\nPilih pakaian yang sesuai dengan konsep dan lokasi. Hindari warna neon yang terlalu mencolok di latar alam.\n\n## 4. Bawa Properti yang Tepat\nProperti sederhana seperti bouquet bunga, selimut, atau payung bisa menambah dimensi pada foto.\n\n## 5. Rileks dan Nikmati\nFoto terbaik lahir saat pasangan rileks dan menikmati momen bersama. Jangan terlalu kaku mengikuti pose.",
+      "cover": "/assets/images/articles/article-01.jpg",
+      "category": "Tips & Tutorial",
+      "tags": ["prewedding", "outdoor", "tips", "fotografi"],
+      "author": {
+        "name": "ABYNSS Studio",
+        "avatar": "/assets/images/about/author.jpg"
+      },
+      "date": "2024-11-10",
+      "reading_time": 8
+    },
+    {
+      "id": 2,
+      "slug": "pentingnya-video-profil-perusahaan",
+      "title": "Mengapa Video Profil Perusahaan Penting di Era Digital",
+      "excerpt": "Di era digital, video profil perusahaan bukan lagi sekadar pelengkap. Ini adalah senjata utama untuk membangun kepercayaan dan menarik investor.",
+      "content": "Video profil perusahaan telah menjadi kebutuhan fundamental di era digital. Berikut adalah alasan mengapa setiap bisnis membutuhkannya.\n\n## Membangun Trust\nVideo memberikan dimensi personal yang tidak bisa dicapai oleh teks atau foto saja. Calon klien dan investor bisa merasakan budaya perusahaan melalui visual yang autentik.\n\n## SEO dan Engagement\nKonten video mendapatkan engagement 10x lebih tinggi di media sosial. Google juga memprioritaskan halaman dengan konten video dalam hasil pencarian.",
+      "cover": "/assets/images/articles/article-02.jpg",
+      "category": "Insight",
+      "tags": ["corporate", "video", "marketing", "digital"],
+      "author": {
+        "name": "ABYNSS Studio",
+        "avatar": "/assets/images/about/author.jpg"
+      },
+      "date": "2024-10-25",
+      "reading_time": 6
+    },
+    {
+      "id": 3,
+      "slug": "tren-fotografi-2025",
+      "title": "Tren Fotografi 2025 yang Wajib Diketahui",
+      "excerpt": "Dari AI-enhanced photography hingga kembalinya film aesthetic, inilah tren fotografi yang akan mendominasi tahun 2025.",
+      "content": "Dunia fotografi terus berevolusi. Tahun 2025 membawa beberapa tren menarik yang perlu diperhatikan oleh fotografer profesional maupun enthusiast.\n\n## 1. AI-Enhanced Photography\nTeknologi AI semakin terintegrasi dalam workflow fotografi, dari auto-editing hingga smart composition suggestions.\n\n## 2. Film Aesthetic Revival\nEstetika film analog kembali populer dengan grain, color cast, dan imperfection yang memberikan karakter unik pada foto.\n\n## 3. Environmental Portraiture\nPortrait yang menyatu dengan lingkungan sekitar, menampilkan subjek sebagai bagian dari cerita yang lebih besar.",
+      "cover": "/assets/images/articles/article-03.jpg",
+      "category": "Tren",
+      "tags": ["tren", "fotografi", "2025", "teknologi"],
+      "author": {
+        "name": "ABYNSS Studio",
+        "avatar": "/assets/images/about/author.jpg"
+      },
+      "date": "2024-10-10",
+      "reading_time": 10
+    }
+  ]
+}

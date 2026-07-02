@@ -1,0 +1,100 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "src": "/assets/images/gallery/gallery-01.jpg",
+      "category": "photography",
+      "type": "image",
+      "title": "Golden Hour Portrait",
+      "alt": "Portrait wanita saat golden hour"
+    },
+    {
+      "id": 2,
+      "src": "/assets/images/gallery/gallery-02.jpg",
+      "category": "photography",
+      "type": "image",
+      "title": "Wedding Ceremony",
+      "alt": "Momen sakral upacara pernikahan"
+    },
+    {
+      "id": 3,
+      "src": "/assets/images/gallery/gallery-03.jpg",
+      "category": "photography",
+      "type": "image",
+      "title": "Urban Architecture",
+      "alt": "Fotografi arsitektur urban"
+    },
+    {
+      "id": 4,
+      "src": "/assets/images/gallery/gallery-04.jpg",
+      "category": "drone",
+      "type": "image",
+      "title": "Aerial Landscape",
+      "alt": "Pemandangan dari udara"
+    },
+    {
+      "id": 5,
+      "src": "/assets/images/gallery/gallery-05.jpg",
+      "category": "photography",
+      "type": "image",
+      "title": "Food Styling",
+      "alt": "Food photography profesional"
+    },
+    {
+      "id": 6,
+      "src": "/assets/images/gallery/gallery-06.jpg",
+      "category": "photography",
+      "type": "image",
+      "title": "Fashion Editorial",
+      "alt": "Fashion editorial photography"
+    },
+    {
+      "id": 7,
+      "src": "/assets/images/gallery/gallery-07.jpg",
+      "category": "bts",
+      "type": "image",
+      "title": "Behind The Scene",
+      "alt": "Behind the scene pemotretan"
+    },
+    {
+      "id": 8,
+      "src": "/assets/images/gallery/gallery-08.jpg",
+      "category": "photography",
+      "type": "image",
+      "title": "Product Shot",
+      "alt": "Product photography premium"
+    },
+    {
+      "id": 9,
+      "src": "/assets/images/gallery/gallery-09.jpg",
+      "category": "drone",
+      "type": "image",
+      "title": "Coastal Drone",
+      "alt": "Foto drone pantai"
+    },
+    {
+      "id": 10,
+      "src": "/assets/images/gallery/gallery-10.jpg",
+      "category": "photography",
+      "type": "image",
+      "title": "Couple Portrait",
+      "alt": "Portrait pasangan romantis"
+    },
+    {
+      "id": 11,
+      "src": "/assets/images/gallery/gallery-11.jpg",
+      "category": "bts",
+      "type": "image",
+      "title": "Studio Setup",
+      "alt": "Setup studio untuk pemotretan"
+    },
+    {
+      "id": 12,
+      "src": "/assets/images/gallery/gallery-12.jpg",
+      "category": "photography",
+      "type": "image",
+      "title": "Night Portrait",
+      "alt": "Portrait malam hari dengan city lights"
+    }
+  ]
+}

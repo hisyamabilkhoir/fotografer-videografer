@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://abynsstudio.com/sitemap.xml

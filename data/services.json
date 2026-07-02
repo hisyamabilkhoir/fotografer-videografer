@@ -1,0 +1,106 @@
+{
+  "services": [
+    {
+      "id": 1,
+      "slug": "photography",
+      "title": "Fotografi Profesional",
+      "subtitle": "Tangkap momen sempurna",
+      "description": "Layanan fotografi profesional untuk berbagai kebutuhan — dari portrait personal hingga kampanye brand skala besar. Setiap foto kami ceritakan dengan detail, emosi, dan keindahan yang tak terlupakan.",
+      "cover": "/assets/images/services/photography.jpg",
+      "features": [
+        "Fotografer bersertifikat dengan 12+ tahun pengalaman",
+        "Peralatan kamera terbaru (Sony, Canon, Fuji)",
+        "Editing & retouching profesional",
+        "Hasil dalam format high-resolution (RAW + JPEG)",
+        "Online gallery untuk preview & download",
+        "Konsultasi konsep gratis"
+      ],
+      "icon": "camera"
+    },
+    {
+      "id": 2,
+      "slug": "videography",
+      "title": "Videografi Sinematik",
+      "subtitle": "Film yang menghidupkan cerita",
+      "description": "Produksi video sinematik dengan kualitas film. Dari wedding cinematic hingga corporate profile, kami menggunakan teknik sinematografi modern untuk menghasilkan visual yang memukau.",
+      "cover": "/assets/images/services/videography.jpg",
+      "features": [
+        "Sinematografi dengan kamera cinema-grade",
+        "Stabilizer gimbal profesional",
+        "Color grading ala film Hollywood",
+        "Sound design & mixing",
+        "Drone footage terintegrasi",
+        "Output 4K / Full HD"
+      ],
+      "icon": "video"
+    },
+    {
+      "id": 3,
+      "slug": "wedding",
+      "title": "Dokumentasi Pernikahan",
+      "subtitle": "Hari spesial, hasil istimewa",
+      "description": "Paket lengkap dokumentasi pernikahan dari prewedding hingga resepsi. Tim kami berpengalaman menangkap setiap momen sakral dan bahagia di hari istimewa Anda.",
+      "cover": "/assets/images/services/wedding.jpg",
+      "features": [
+        "Coverage full day (8-12 jam)",
+        "Multi-photographer team",
+        "Same-day edit video",
+        "Prewedding session termasuk",
+        "Album premium custom",
+        "Highlight video cinematic"
+      ],
+      "icon": "heart"
+    },
+    {
+      "id": 4,
+      "slug": "corporate",
+      "title": "Corporate & Brand",
+      "subtitle": "Visual yang memperkuat brand",
+      "description": "Layanan fotografi dan videografi untuk kebutuhan korporat — company profile, annual report, event coverage, dan konten marketing yang profesional.",
+      "cover": "/assets/images/services/corporate.jpg",
+      "features": [
+        "Company profile foto & video",
+        "Event & conference coverage",
+        "Executive portrait",
+        "Product photography",
+        "Social media content",
+        "Drone & aerial coverage"
+      ],
+      "icon": "briefcase"
+    },
+    {
+      "id": 5,
+      "slug": "drone",
+      "title": "Aerial & Drone",
+      "subtitle": "Perspektif dari ketinggian",
+      "description": "Layanan drone profesional untuk aerial photography dan videography. Menangkap keindahan dari perspektif udara dengan kualitas 4K dan pilot bersertifikat.",
+      "cover": "/assets/images/services/drone.jpg",
+      "features": [
+        "Drone DJI terbaru (Mavic 3 Pro)",
+        "Pilot bersertifikat DGCA",
+        "4K/60fps aerial footage",
+        "Mapping & survey capability",
+        "Indoor drone available",
+        "Izin terbang terurus"
+      ],
+      "icon": "drone"
+    },
+    {
+      "id": 6,
+      "slug": "editing",
+      "title": "Post-Production",
+      "subtitle": "Sentuhan akhir yang sempurna",
+      "description": "Layanan editing dan color grading profesional. Kami menyempurnakan setiap foto dan video dengan sentuhan artistik yang konsisten dan berkualitas tinggi.",
+      "cover": "/assets/images/services/editing.jpg",
+      "features": [
+        "Photo retouching & enhancement",
+        "Video editing & cutting",
+        "Color grading sinematik",
+        "Motion graphics & titling",
+        "Audio mixing & mastering",
+        "Output berbagai format"
+      ],
+      "icon": "edit"
+    }
+  ]
+}
