@@ -16,7 +16,7 @@ import { initMagneticButtons } from './components/magnetic-btn.js';
 import { initMarquee } from './components/marquee.js';
 import { initLightbox } from './components/lightbox.js';
 import { initAccordion } from './components/accordion.js';
-import { initLazyLoad } from './utils.js';
+import { initLazyLoad, getBasePath } from './utils.js';
 
 import { initPageTransitions } from './core/transitions.js';
 import { initTilts } from './components/tilt.js';
@@ -79,8 +79,9 @@ async function initCurrentPage() {
 }
 
 function isDynamicListPage(path) {
+  const basePath = getBasePath();
   const normalized = path
-    .replace(/\/abynsstudio\/fotografer-videografer/, '')
+    .replace(basePath, '')
     .replace(/\/index\.html$/, '')
     .replace(/\/+$/, '') || '/';
   const dynamicPaths = [
@@ -97,6 +98,7 @@ function isDynamicListPage(path) {
 }
 
 function isPage(currentPath, targetPath) {
-  const normalized = currentPath.replace(/\/abynsstudio\/fotografer-videografer/, '').replace(/\/+$/, '') || '/';
+  const basePath = getBasePath();
+  const normalized = currentPath.replace(basePath, '').replace(/\/+$/, '') || '/';
   return normalized === targetPath;
 }

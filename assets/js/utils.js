@@ -31,7 +31,11 @@ export function getBasePath() {
   if (path.includes('/abynsstudio/fotografer-videografer')) {
     return '/abynsstudio/fotografer-videografer';
   }
-  // For GitHub Pages root
+  // For GitHub Pages subdirectory
+  if (path.includes('/fotografer-videografer')) {
+    return '/fotografer-videografer';
+  }
+  // For GitHub Pages custom domain or standard root
   return '';
 }
 

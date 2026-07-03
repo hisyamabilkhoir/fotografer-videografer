@@ -64,7 +64,7 @@ function highlightActiveLink() {
 
     // Remove trailing slashes for comparison
     const normalizedPath = currentPath.replace(/\/+$/, '') || '/';
-    const normalizedHref = new URL(href, window.location.origin).pathname.replace(/\/+$/, '') || '/';
+    const normalizedHref = new URL(href, window.location.href).pathname.replace(/\/+$/, '') || '/';
 
     if (normalizedPath === normalizedHref) {
       link.classList.add('active');
