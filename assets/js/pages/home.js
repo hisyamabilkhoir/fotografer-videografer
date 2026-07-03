@@ -86,6 +86,13 @@ function populateFeaturedProjects(projects) {
       <div class="featured-card-overlay">
         <span class="featured-card-category">${project.category}</span>
         <h3 class="featured-card-title">${project.title}</h3>
+        <span class="featured-card-link">
+          Lihat Detail
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </span>
       </div>
     </a>
   `).join('');
@@ -138,17 +145,24 @@ function populateActivitiesPreview(activities) {
   const basePath = getBasePath();
 
   container.innerHTML = activities.map(activity => `
-    <a href="${basePath}/activities/${activity.slug}/" class="article-preview-card" data-animate="fade-up">
-      <div class="article-preview-img">
+    <a href="${basePath}/activities/${activity.slug}/" class="activity-preview-card" data-animate="fade-up">
+      <div class="activity-preview-img">
+        <span class="activity-preview-badge">${activity.category}</span>
         <img src="${resolvePath(activity.cover)}" alt="${activity.title}" loading="lazy">
       </div>
-      <div class="article-preview-body">
-        <div class="article-preview-meta">
-          <span>${activity.category}</span>
-          <span>${formatDate(activity.date)}</span>
-        </div>
+      <div class="activity-preview-body">
+        <span class="activity-preview-date">${formatDate(activity.date)}</span>
         <h3>${activity.title}</h3>
         <p>${activity.excerpt}</p>
+        <div class="activity-preview-footer">
+          <span class="activity-preview-link">
+            Selengkapnya
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </span>
+        </div>
       </div>
     </a>
   `).join('');

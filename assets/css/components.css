@@ -37,27 +37,57 @@
   background: var(--accent-gradient);
   color: var(--bg-primary);
   border: none;
+  z-index: 1;
+}
+
+.btn-primary::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -150%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.4) 50%,
+    transparent 100%
+  );
+  transform: skewX(-25deg);
+  z-index: -1;
+  transition: none;
+}
+
+.btn-primary:hover::after {
+  left: 150%;
+  transition: left 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-primary:hover {
-  transform: translateY(-2px);
+  transform: translateY(-3px);
   box-shadow: var(--shadow-glow-strong);
 }
 
 .btn-primary:active {
-  transform: translateY(0);
+  transform: translateY(-1px);
 }
 
 .btn-outline {
   background: transparent;
-  color: var(--text-primary);
-  border: 1px solid var(--border-color);
+  color: var(--accent);
+  border: 1px solid var(--accent);
 }
 
 .btn-outline:hover {
-  border-color: var(--accent);
-  color: var(--accent);
-  box-shadow: var(--shadow-glow);
+  background: var(--accent-gradient);
+  color: var(--bg-primary);
+  border-color: transparent;
+  box-shadow: var(--shadow-glow-strong);
+  transform: translateY(-3px);
+}
+
+.btn-outline:active {
+  transform: translateY(-1px);
 }
 
 .btn-ghost {

@@ -226,16 +226,27 @@
 
 .equipment-card {
   text-align: center;
-  padding: var(--space-lg) var(--space-md);
-  background: var(--bg-tertiary);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-lg);
+  padding: var(--space-xl) var(--space-md);
+  background: linear-gradient(135deg, rgba(24, 24, 24, 0.6) 0%, rgba(13, 13, 13, 0.8) 100%);
+  border: 1px solid rgba(199, 166, 106, 0.15);
+  border-radius: 50%;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   transition: all var(--duration-normal) var(--ease-out);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  max-width: 280px;
+  margin-inline: auto;
+  z-index: 1;
 }
 
 .equipment-card:hover {
-  border-color: var(--border-hover);
-  transform: translateY(-4px);
+  border-color: var(--accent);
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(199, 166, 106, 0.12), 0 0 20px rgba(199, 166, 106, 0.05);
 }
 
 .equipment-icon {
@@ -307,35 +318,80 @@
 .workflow-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: var(--space-md);
+  gap: var(--space-lg);
   counter-reset: workflow;
 }
 
 .workflow-step {
   position: relative;
-  padding: var(--space-lg) var(--space-md);
+  padding: 3rem 2rem;
   text-align: center;
   counter-increment: workflow;
+  background: linear-gradient(180deg, rgba(24, 24, 24, 0.6) 0%, rgba(13, 13, 13, 0.8) 100%);
+  border: 1px solid rgba(199, 166, 106, 0.12);
+  border-radius: var(--radius-lg);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  transition: all var(--duration-normal) var(--ease-out);
+  z-index: 1;
+}
+
+.workflow-step:hover {
+  transform: translateY(-8px);
+  border-color: var(--accent);
+  box-shadow: 0 20px 40px rgba(199, 166, 106, 0.12), 0 0 15px rgba(199, 166, 106, 0.05);
+}
+
+@media (min-width: 1025px) {
+  .workflow-step:not(:last-child)::after {
+    content: '→';
+    position: absolute;
+    top: 50%;
+    right: -1.5rem;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    color: var(--accent);
+    opacity: 0.4;
+    z-index: 2;
+    font-family: var(--font-sans);
+  }
 }
 
 .workflow-step::before {
   content: counter(workflow, decimal-leading-zero);
-  display: block;
+  display: inline-block;
   font-family: var(--font-serif);
-  font-size: var(--fs-h1);
+  font-size: 3rem;
   font-weight: var(--fw-bold);
-  color: var(--accent);
-  opacity: 0.15;
-  margin-bottom: var(--space-sm);
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0.75;
+  margin-bottom: var(--space-md);
+  transition: all var(--duration-normal) var(--ease-out);
+  transform-origin: center;
+}
+
+.workflow-step:hover::before {
+  transform: scale(1.1);
+  opacity: 1;
 }
 
 .workflow-step h4 {
-  margin-bottom: var(--space-xs);
+  font-size: var(--fs-h4);
+  color: var(--text-primary);
+  margin-bottom: var(--space-sm);
+  transition: color var(--duration-normal) var(--ease-out);
+}
+
+.workflow-step:hover h4 {
+  color: var(--accent);
 }
 
 .workflow-step p {
   font-size: var(--fs-caption);
   color: var(--text-muted);
+  line-height: var(--lh-relaxed);
 }
 
 @media (max-width: 1024px) {

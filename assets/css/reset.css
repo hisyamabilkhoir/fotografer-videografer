@@ -31,6 +31,8 @@ body {
   font-weight: var(--fw-regular);
   color: var(--text-secondary);
   background-color: var(--bg-primary);
+  background-image: radial-gradient(circle at 50% 0%, #352712 0%, #0d0d0d 75%);
+  background-attachment: fixed;
   overflow-x: hidden;
 }
 

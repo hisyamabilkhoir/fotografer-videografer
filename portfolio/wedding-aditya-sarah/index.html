@@ -95,12 +95,12 @@
         
 
         <div class="masonry-grid mt-xl" data-animate-children>
-          <div class="masonry-item" data-lightbox="project-gallery" data-src="../../assets/images/portfolio/wedding-01.jpg" data-animate="fade-up" style="cursor:pointer;"><img src="../../assets/images/portfolio/wedding-01.jpg" alt="The Eternal Bond Gallery Image" loading="lazy"></div>
-<div class="masonry-item" data-lightbox="project-gallery" data-src="../../assets/images/portfolio/wedding-01-2.jpg" data-animate="fade-up" style="cursor:pointer;"><img src="../../assets/images/portfolio/wedding-01-2.jpg" alt="The Eternal Bond Gallery Image" loading="lazy"></div>
-<div class="masonry-item" data-lightbox="project-gallery" data-src="../../assets/images/portfolio/wedding-01-3.jpg" data-animate="fade-up" style="cursor:pointer;"><img src="../../assets/images/portfolio/wedding-01-3.jpg" alt="The Eternal Bond Gallery Image" loading="lazy"></div>
-<div class="masonry-item" data-lightbox="project-gallery" data-src="../../assets/images/portfolio/wedding-01-4.jpg" data-animate="fade-up" style="cursor:pointer;"><img src="../../assets/images/portfolio/wedding-01-4.jpg" alt="The Eternal Bond Gallery Image" loading="lazy"></div>
-<div class="masonry-item" data-lightbox="project-gallery" data-src="../../assets/images/portfolio/wedding-01-5.jpg" data-animate="fade-up" style="cursor:pointer;"><img src="../../assets/images/portfolio/wedding-01-5.jpg" alt="The Eternal Bond Gallery Image" loading="lazy"></div>
-<div class="masonry-item" data-lightbox="project-gallery" data-src="../../assets/images/portfolio/wedding-01-6.jpg" data-animate="fade-up" style="cursor:pointer;"><img src="../../assets/images/portfolio/wedding-01-6.jpg" alt="The Eternal Bond Gallery Image" loading="lazy"></div>
+          <div class="masonry-item-wrapper" data-animate="fade-up"><div class="masonry-item" data-lightbox="project-gallery" data-src="../../assets/images/portfolio/wedding-01.jpg" style="cursor:pointer;"><img src="../../assets/images/portfolio/wedding-01.jpg" alt="The Eternal Bond Gallery Image" loading="lazy"></div></div>
+<div class="masonry-item-wrapper" data-animate="fade-up"><div class="masonry-item" data-lightbox="project-gallery" data-src="../../assets/images/portfolio/wedding-01-2.jpg" style="cursor:pointer;"><img src="../../assets/images/portfolio/wedding-01-2.jpg" alt="The Eternal Bond Gallery Image" loading="lazy"></div></div>
+<div class="masonry-item-wrapper" data-animate="fade-up"><div class="masonry-item" data-lightbox="project-gallery" data-src="../../assets/images/portfolio/wedding-01-3.jpg" style="cursor:pointer;"><img src="../../assets/images/portfolio/wedding-01-3.jpg" alt="The Eternal Bond Gallery Image" loading="lazy"></div></div>
+<div class="masonry-item-wrapper" data-animate="fade-up"><div class="masonry-item" data-lightbox="project-gallery" data-src="../../assets/images/portfolio/wedding-01-4.jpg" style="cursor:pointer;"><img src="../../assets/images/portfolio/wedding-01-4.jpg" alt="The Eternal Bond Gallery Image" loading="lazy"></div></div>
+<div class="masonry-item-wrapper" data-animate="fade-up"><div class="masonry-item" data-lightbox="project-gallery" data-src="../../assets/images/portfolio/wedding-01-5.jpg" style="cursor:pointer;"><img src="../../assets/images/portfolio/wedding-01-5.jpg" alt="The Eternal Bond Gallery Image" loading="lazy"></div></div>
+<div class="masonry-item-wrapper" data-animate="fade-up"><div class="masonry-item" data-lightbox="project-gallery" data-src="../../assets/images/portfolio/wedding-01-6.jpg" style="cursor:pointer;"><img src="../../assets/images/portfolio/wedding-01-6.jpg" alt="The Eternal Bond Gallery Image" loading="lazy"></div></div>
         </div>
       </div>
     </section>
@@ -196,7 +196,7 @@
   <script type="module" src="../../assets/js/app.js"></script>
 
   <script type="module">
-    import { fetchData, getBasePath } from '../../assets/js/utils.js';
+    import { fetchData, getBasePath, resolvePath } from '../../assets/js/utils.js';
     import { initTilts } from '../../assets/js/components/tilt.js';
 
     document.addEventListener('loaderComplete', async () => {
@@ -208,29 +208,65 @@
       const currentCategory = "wedding";
       const currentSlug = "wedding-aditya-sarah";
 
-      const related = data.projects.filter(p => p.category === currentCategory && p.slug !== currentSlug).slice(0, 3);
+      // Get projects with the same category (excluding current)
+      let related = data.projects.filter(p => p.category === currentCategory && p.slug !== currentSlug);
+
+      // If we have fewer than 3 related projects, fill the remaining spots with other projects
+      if (related.length < 3) {
+        const addedSlugs = new Set(related.map(p => p.slug));
+        addedSlugs.add(currentSlug);
+
+        const extra = data.projects.filter(p => !addedSlugs.has(p.slug)).slice(0, 3 - related.length);
+        related = [...related, ...extra];
+      } else {
+        related = related.slice(0, 3);
+      }
 
       if (related.length) {
         container.innerHTML = related.map(p => `
-          <a href="${basePath}/portfolio/${p.slug}/" class="featured-card" data-animate="fade-up" data-tilt>
-            <img src="${basePath}${p.cover}" alt="${p.title}" loading="lazy">
+          <a href="${basePath}/portfolio/${p.slug}/" class="featured-card" data-tilt>
+            <img src="${resolvePath(p.cover)}" alt="${p.title}" loading="lazy">
             <div class="featured-card-overlay">
               <span class="featured-card-category">${p.category}</span>
               <h3 class="featured-card-title">${p.title}</h3>
+              <span class="featured-card-link">
+                Lihat Detail
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </span>
             </div>
           </a>
         `).join('');
+      }
+
+      // Re-initialize GSAP ScrollTrigger for the newly added children
+      if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
+        const children = Array.from(container.children);
+        if (children.length > 0) {
+          gsap.fromTo(children, 
+            { y: 30, opacity: 0 },
+            {
+              y: 0,
+              opacity: 1,
+              duration: 0.6,
+              stagger: 0.1,
+              ease: 'power3.out',
+              scrollTrigger: {
+                trigger: container,
+                start: 'top 85%',
+                toggleActions: 'play none none none'
+              }
+            }
+          );
+        }
       } else {
-        const fallback = data.projects.filter(p => p.slug !== currentSlug).slice(0, 3);
-        container.innerHTML = fallback.map(p => `
-          <a href="${basePath}/portfolio/${p.slug}/" class="featured-card" data-animate="fade-up" data-tilt>
-            <img src="${basePath}${p.cover}" alt="${p.title}" loading="lazy">
-            <div class="featured-card-overlay">
-              <span class="featured-card-category">${p.category}</span>
-              <h3 class="featured-card-title">${p.title}</h3>
-            </div>
-          </a>
-        `).join('');
+        // Fallback: make children visible if GSAP is not present
+        Array.from(container.children).forEach(el => {
+          el.style.opacity = '1';
+          el.style.transform = 'none';
+        });
       }
       initTilts();
     });
