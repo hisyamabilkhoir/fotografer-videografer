@@ -85,7 +85,7 @@
       "subtitle": "Fashion Editorial 2024",
       "category": "fashion",
       "type": "photography",
-      "featured": false,
+      "featured": true,
       "cover": "/assets/images/portfolio/fashion-01.jpg",
       "images": [
         "/assets/images/portfolio/fashion-01.jpg",

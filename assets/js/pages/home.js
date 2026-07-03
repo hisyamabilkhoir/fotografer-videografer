@@ -80,7 +80,7 @@ function populateFeaturedProjects(projects) {
 
   const basePath = getBasePath();
 
-  container.innerHTML = projects.slice(0, 4).map(project => `
+  container.innerHTML = projects.slice(0, 5).map(project => `
     <a href="${basePath}/portfolio/${project.slug}/" class="featured-card" data-animate="fade-up" data-tilt>
       <img src="${resolvePath(project.cover)}" alt="${project.title}" loading="lazy">
       <div class="featured-card-overlay">
